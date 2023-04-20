@@ -4,7 +4,15 @@
   "description": "",
   "homepage": "https://ZhenyaIlchenko.github.io/Starter",
   "source": "src/index.html",
-  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "Firefox ESR",
+    "last 2 Edge versions",
+    "last 2 Safari major versions",
+    "last 2 iOS major versions",
+    "last 2 Samsung versions"
+  ],
   "scripts": {
     "start": "parcel",
     "build": "parcel build src/*.html --public-url /Starter/"
@@ -14,6 +22,7 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3",
     "parcel": "^2.8.3",
+    "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
   },
   "dependencies": {
