@@ -76,7 +76,6 @@ typings/
 .cache
 .parcel-cache
 
-
 # Next.js build output
 .next
 
@@ -104,3 +103,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Misc
+.DS_Store
