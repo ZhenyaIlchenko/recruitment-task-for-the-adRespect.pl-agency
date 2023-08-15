@@ -1,2 +1,2 @@
 # Starter
-A project starter that contains Parcel and Bootstrap
+This is the recruitment task for the adRespect.pl agency.
