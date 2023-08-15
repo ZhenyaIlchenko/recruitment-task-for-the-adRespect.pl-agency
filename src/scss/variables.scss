@@ -1,0 +1,45 @@
+// $primary: #dcc1ab;
+$primary-text-color: #111;
+$grey-text-color:#f5f0ec;
+$green-text-color: #1b5b31;
+
+$font-family-sans-serif: Inter, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-sans-serif-additional: Montserrat, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$body-color: $primary-text-color;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1280px,
+  // xxxl: 1570px,
+);
+
+$container-padding-x: 178px;
+
+// Spacing
+$spacer: 10px;
+$spacers: (
+  1: $spacer * 1,
+  2: $spacer * 2,
+  3: $spacer * 3,
+  4: $spacer * 4,
+  5: $spacer * 5,
+);
+
+// Typography
+$headings-font-family: $font-family-sans-serif-additional;
+
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 3.75;
+$h2-font-size: $font-size-base * 3;
+// $h3-font-size: $font-size-base * 1.75;
+
+$headings-margin-bottom:      $spacer * 3.2;
+// $headings-line-height: 1.4;
+
+
+// Links
+$link-color: $green-text-color;
