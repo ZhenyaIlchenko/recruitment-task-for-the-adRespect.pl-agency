@@ -2,7 +2,7 @@
   "name": "starter",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://ZhenyaIlchenko.github.io/Starter",
+  "homepage": "https://ZhenyaIlchenko.github.io/recruitment-task-for-the-adRespect.pl-agency",
   "source": "src/index.html",
   "browserslist": [
     "last 2 Chrome versions",
@@ -15,7 +15,7 @@
   ],
   "scripts": {
     "start": "parcel",
-    "build": "parcel build src/*.html --public-url /Starter/"
+    "build": "parcel build src/*.html --public-url /recruitment-task-for-the-adRespect.pl-agency/"
   },
   "author": "Zhenya Ilchenko",
   "license": "ISC",
