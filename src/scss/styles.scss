@@ -40,8 +40,11 @@
 // Layout
 @import "./layout/header";
 @import "./layout/footer";
+@import "./layout/section";
 
 // Components
+@import "./components/type";
+@import "./components/containers";
 
 // Utilities
 @import "./utilities";
