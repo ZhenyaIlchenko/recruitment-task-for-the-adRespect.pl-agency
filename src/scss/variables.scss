@@ -1,4 +1,5 @@
 // $primary: #dcc1ab;
+$bgcolor: #dcc1ab;
 $primary-text-color: #111;
 $grey-text-color:#f5f0ec;
 $green-text-color: #1b5b31;
@@ -13,11 +14,10 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1280px,
-  // xxxl: 1570px,
+  xxl: 1294px,
 );
 
-$container-padding-x: 178px;
+$container-padding-x: 2rem;
 
 // Spacing
 $spacer: 10px;
@@ -27,6 +27,7 @@ $spacers: (
   3: $spacer * 3,
   4: $spacer * 4,
   5: $spacer * 5,
+  6: $spacer * 6,
 );
 
 // Typography
@@ -35,11 +36,15 @@ $headings-font-family: $font-family-sans-serif-additional;
 $font-size-base: 1rem;
 $h1-font-size: $font-size-base * 3.75;
 $h2-font-size: $font-size-base * 3;
-// $h3-font-size: $font-size-base * 1.75;
 
-$headings-margin-bottom:      $spacer * 3.2;
-// $headings-line-height: 1.4;
-
+$headings-margin-bottom: $spacer * 3.2;
 
 // Links
 $link-color: $green-text-color;
+
+//  Cards // 
+$card-border-radius: 28px;
+$card-border-width: 0;
+$card-spacer-y: 48px;
+$card-spacer-x: 40px;
+$card-title-spacer-y: 12px;
