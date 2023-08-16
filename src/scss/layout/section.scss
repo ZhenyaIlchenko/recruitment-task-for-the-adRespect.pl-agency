@@ -1,15 +1,35 @@
 .section-oferta {
   padding-top: 120px;
-  padding-bottom: 180px;
+  padding-bottom: 160px;
   background-color: $grey-text-color;
+}
+
+.section-o-firme {
+  padding-top: 135px;
+  padding-bottom: 135px;
+  color: $grey-text-color;
 }
 
 .section-realizacje {
   padding-top: 120px;
-  padding-bottom: 180px;
-  background-color: #dcc1ab;
+  padding-bottom: 160px;
+  background-color: $bgcolor;
 }
 
-.bg-green {
+.section-kontakt {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  // padding-left: 111px;
+  // padding-right: 111px;
+  background-color: $grey-text-color;
+}
+
+.box {
+  padding-left: 111px;
+  padding-right: 111px;
+}
+
+.kontakt-form {
   background-color: $green-text-color;
+  padding: 110px 120px;
 }
