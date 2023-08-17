@@ -17,7 +17,8 @@ $container-max-widths: (
   xxl: 1294px,
 );
 
-$container-padding-x: 2rem;
+$grid-gutter-width: 2rem;
+// $container-padding-x: 2rem;
 
 // Spacing
 $spacer: 10px;
@@ -37,10 +38,11 @@ $font-size-base: 1rem;
 $h1-font-size: $font-size-base * 3.75;
 $h2-font-size: $font-size-base * 3;
 
-$headings-margin-bottom: $spacer * 3.2;
+// $headings-margin-bottom: $spacer * 3.2;
 
 // Links
 $link-color: $green-text-color;
+// $link-shade-percentage:                   20% !default;
 
 //  Cards // 
 $card-border-radius: 28px;
