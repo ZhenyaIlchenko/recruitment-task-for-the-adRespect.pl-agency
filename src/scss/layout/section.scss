@@ -1,35 +1,56 @@
 .section-oferta {
+  background-color: $grey-text-color;
   padding-top: 120px;
   padding-bottom: 160px;
-  background-color: $grey-text-color;
 }
 
 .section-o-firme {
+  color: $grey-text-color;
+  max-width: 500px;
+  margin-left: auto;
   padding-top: 135px;
   padding-bottom: 135px;
-  color: $grey-text-color;
+  // padding-left: 160px;
+  // padding-right: 92px;
+
+  @include media-breakpoint-down(lg) {
+    margin-right: auto;
+  }
 }
 
 .section-realizacje {
+  background-color: $bgcolor;
   padding-top: 120px;
   padding-bottom: 160px;
-  background-color: $bgcolor;
 }
 
 .section-kontakt {
+  background-color: $grey-text-color;
   padding-top: 60px;
   padding-bottom: 60px;
-  // padding-left: 111px;
-  // padding-right: 111px;
-  background-color: $grey-text-color;
 }
 
-.box {
-  padding-left: 111px;
-  padding-right: 111px;
+.section-oferta-second {
+  // margin-right: 111px;
+  margin-left: 111px;
+  max-width: 710px;
+
+  @include media-breakpoint-down(lg) {
+    // margin-right: 0;
+    margin-left: 0;
+  }
 }
 
-.kontakt-form {
+.section-kontakt-second {
   background-color: $green-text-color;
-  padding: 110px 120px;
+  color: $grey-text-color;
+  margin-right: 111px;
+  margin-left: 111px;
+  padding: 120px 110px;
+
+  @include media-breakpoint-down(lg) {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 60px 50px;
+  }
 }
