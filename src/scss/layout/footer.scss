@@ -8,27 +8,61 @@ footer {
 .footer-section {
   margin-left: 111px;
   margin-right: 111px;
+
+  @include media-breakpoint-down(lg) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .footer-first-part {
   display: flex;
   padding-bottom: 62px;
   border-bottom: 1px solid $grey-text-color;
+
+  @include media-breakpoint-down(lg) {
+    display: block;
+    padding-bottom: 42px;
+  }
 }
 
 .footer-logo {
   margin-right: auto;
+
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 20px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    height: 19px;
+    width: 100px;
+  }
 }
 
 .footer-kontakt {
   display: flex;
   gap: 24px;
+
+  @include media-breakpoint-down(md) {
+    display: block;
+  }
+}
+
+.btn-footer {
+  @include media-breakpoint-down(md) {
+    margin-top: 20px;
+  }
 }
 
 .footer-second-part {
   display: flex;
   margin-top: 62px;
   margin-bottom: 120px;
+
+  @include media-breakpoint-down(lg) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 .footer-list {
@@ -37,29 +71,39 @@ footer {
   gap: 48px;
   list-style: none;
   margin-bottom: 0;
-  // margin-right: auto;
   padding-left: 0;
+
+  @include media-breakpoint-down(lg) {
+    display: block;
+  }
 }
 
 .footer-item {
   color: $grey-text-color;
   text-decoration: none;
-}
 
-// .footer-address-list {
-//   display: flex;
-//   font-size: 14px;
-//   gap: 48px;
-//   list-style: none;
-//   margin-bottom: 0;
-//   padding-left: 0;
-// }
+  &:hover,
+  &:focus {
+    color: $green-text-color;
+    transition: transform .25s cubic-bezier(.4,0,.2,1);
+    // color: $bgcolor;
+  }
+}
 
 .footer-third-part {
   display: flex;
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+  }
 }
 
 .company-logo {
   display: flex;
   gap: 16px;
+
+  @include media-breakpoint-down(sm) {
+    height: 20px;
+    width: 100px;
+  }
 }
