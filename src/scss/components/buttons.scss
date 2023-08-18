@@ -1,0 +1,59 @@
+$icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none"><path fill="#1B5B31" d="m16 8.495-.896-.895-6.468 6.477V.5H7.364v13.568L.896 7.6 0 8.495 8.005 16.5 16 8.495Z"/></svg>');
+$icon2: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" fill="none"><path fill="#F5F0EC" d="m16 8.495-.896-.895-6.468 6.477V.5H7.364v13.568L.896 7.6 0 8.495 8.005 16.5 16 8.495Z"/></svg>');
+$icon3: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#F5F0EC" d="M7.995 0 7.1.896l6.477 6.468H0v1.272h13.568L7.1 15.104l.895.896L16 7.995 7.995 0Z"/></svg>');
+$icon4: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="#1B5B31" d="M7.995 0 7.1.896l6.477 6.468H0v1.272h13.568L7.1 15.104l.895.896L16 7.995 7.995 0Z"/></svg>');
+
+
+.btn-primary {
+  --bs-btn-color: #f5f0ec;
+}
+
+// .btn-secondary {
+//   --bs-btn-bg: $grey-text-color;
+//   --bs-btn-color: $green-text-color;
+//   --bs-btn-active-color: #1b5b31;
+//   --bs-btn-hover-color: #1b5b31;
+// }
+
+.btn-secondary {
+  --bs-btn-color: #1b5b31;
+  --bs-btn-active-color: #1b5b31;
+  --bs-btn-hover-color: #f5f0ec;
+  --bs-btn-hover-bg: #1b5b31; 
+  --bs-btn-hover-border-color: #f5f0ec;
+  --bs-btn-active-color: #f5f0ec;
+  --bs-btn-active-bg: #1b5b31;
+}
+
+.btn-arrow-right {
+  background-image: escape-svg($icon3);
+  background-repeat: no-repeat;
+  background-position: right 20px top 50%;
+  padding-right: 46px;
+  transition: background-position .2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-position: right 15px top 50%;
+    background-image: escape-svg($icon4);
+  }
+}
+
+.btn-arrow-down {
+  background-image: escape-svg($icon);
+  background-repeat: no-repeat;
+  background-position: right 20px top 50%;
+  padding-right: 46px;
+  transition: background-position .2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-position: right 20px top 42%;
+    background-image: escape-svg($icon2);
+  }
+}
+
+.intro-btn {
+  display: flex;
+  gap: 36px;
+}
