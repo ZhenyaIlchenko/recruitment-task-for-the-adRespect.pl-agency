@@ -1,7 +1,25 @@
+.section-intro {
+  max-width: 600px;
+  margin-right: auto;
+  padding-top: 144px;
+  padding-bottom: 144px;
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+
 .section-oferta {
   background-color: $grey-text-color;
   padding-top: 120px;
   padding-bottom: 160px;
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 
 .section-o-firme {
@@ -10,8 +28,6 @@
   margin-left: auto;
   padding-top: 135px;
   padding-bottom: 135px;
-  // padding-left: 160px;
-  // padding-right: 92px;
 
   @include media-breakpoint-down(lg) {
     margin-right: auto;
