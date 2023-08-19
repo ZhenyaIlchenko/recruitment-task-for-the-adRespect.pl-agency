@@ -55,5 +55,10 @@ $icon4: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1
 
 .intro-btn {
   display: flex;
-  gap: 36px;
+  flex-direction: column;
+  gap: 24px 36px;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: row;
+  }
 }
