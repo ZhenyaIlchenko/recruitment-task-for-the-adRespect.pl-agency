@@ -3,6 +3,11 @@ footer {
   padding-top: 80px;
   padding-bottom: 80px;
   color: $grey-text-color;
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
 }
 
 .footer-section {
@@ -22,7 +27,7 @@ footer {
 
   @include media-breakpoint-down(lg) {
     display: block;
-    padding-bottom: 42px;
+    padding-bottom: 25px;
   }
 }
 
@@ -34,7 +39,7 @@ footer {
   }
 
   @include media-breakpoint-down(sm) {
-    height: 19px;
+    height: 20px;
     width: 100px;
   }
 }
@@ -60,7 +65,7 @@ footer {
   margin-bottom: 120px;
 
   @include media-breakpoint-down(lg) {
-    margin-top: 40px;
+    margin-top: 25px;
     margin-bottom: 40px;
   }
 }
@@ -86,7 +91,6 @@ footer {
   &:focus {
     color: $green-text-color;
     transition: transform .25s cubic-bezier(.4,0,.2,1);
-    // color: $bgcolor;
   }
 }
 
