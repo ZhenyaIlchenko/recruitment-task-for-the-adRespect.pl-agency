@@ -1,7 +1,6 @@
 .section-intro {
-  // max-width: 600px;
   margin-right: auto;
-  padding-top: 44px;
+  padding-top: 64px;
   padding-bottom: 44px;
 }
 
@@ -11,33 +10,43 @@
   padding-bottom: 160px;
 
   @include media-breakpoint-down(lg) {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 44px;
+    padding-bottom: 44px;
   }
 }
 
 .section-about-company {
   color: $grey-text-color;
-  max-width: 500px;
   margin-left: auto;
   padding-top: 135px;
-  padding-bottom: 135px;
+  padding-bottom: 44px;
 
   @include media-breakpoint-down(lg) {
     margin-right: auto;
+    padding-top: 44px;
   }
 }
 
 .section-realizacje {
   background-color: $bgcolor;
   padding-top: 120px;
-  padding-bottom: 160px;
+  padding-bottom: 96px;
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
 }
 
 .section-contact {
   background-color: $grey-text-color;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
 }
 
 .section-oferta-second {
@@ -51,7 +60,7 @@
 .section-contact-second {
   background-color: $green-text-color;
   color: $grey-text-color;
-  padding: 60px 50px;
+  padding: 50px 40px;
   
   @include media-breakpoint-up(lg) {
     margin-right: 111px;
@@ -87,6 +96,36 @@
       }
     }
   }
+}
+
+.img-container-reverse {
+  height: 100%;
+  margin-left: -16px;
+  margin-right: -16px;
+
+  @include media-breakpoint-down(lg) {
+    max-height: 500px;
+  }
+
+  @each $breakpoint, $container-max-width in $container-max-widths {
+    @if $breakpoint == sm {
+      @include media-breakpoint-up($breakpoint) {
+        margin-left: calc((100vw - #{$container-max-width}) / 2 * -1 - 16px);
+        margin-right: calc((100vw - #{$container-max-width}) / 2 * -1 - 16px);
+      }
+    } @else if $breakpoint == md {
+      @include media-breakpoint-up($breakpoint) {
+        margin-left: calc((100vw - #{$container-max-width}) / 2 * -1 - 16px);
+        margin-right: calc((100vw - #{$container-max-width}) / 2 * -1 - 16px);
+      }
+    } @else {
+      @include media-breakpoint-up($breakpoint) {
+        margin-right: 0;
+        margin-left: calc((100vw - #{$container-max-width}) / 2 * -1 - 30px);
+      }
+    }
+  }
+
 }
 
 .img-rich {
