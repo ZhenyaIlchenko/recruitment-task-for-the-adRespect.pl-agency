@@ -14,9 +14,9 @@
   align-items: center;
 }
 
-.pr-0 {
-  padding-right: 0;
-}
+// .pr-0 {
+//   padding-right: 0;
+// }
 
 .mb-0 {
   margin-bottom: 0;
@@ -32,4 +32,16 @@
 
 .white-space-nowrap {
   white-space: nowrap;
+}
+
+.active-md {
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
+
+.active-sm {
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
 }
