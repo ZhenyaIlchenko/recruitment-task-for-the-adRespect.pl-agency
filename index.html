@@ -7,14 +7,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/recruitment-task-for-the-adRespect.pl-agency/index.eed000b5.css">
+  <link rel="stylesheet" href="/recruitment-task-for-the-adRespect.pl-agency/index.8c25b5db.css">
   <title>Homepage</title>
 </head> 
 
   <body>
 
     <header>
-  <nav>
+  <nav class="navbar navbar-expand-lg">
     <div class="container header-nav">
       <div class="header-logo">
         <a href="/recruitment-task-for-the-adRespect.pl-agency/index.html" title="Go to the main page">
@@ -22,45 +22,115 @@
         </a>
       </div>
 
-      <ul class="header-nav-list">
-          <li><a class="header-nav-link" href="/recruitment-task-for-the-adRespect.pl-agency/index.html#oferta">Oferta</a></li>
-          <li><a class="header-nav-link" href="/recruitment-task-for-the-adRespect.pl-agency/index.html#o-firmie">O firmie</a></li>
-          <li><a class="header-nav-link" href="/recruitment-task-for-the-adRespect.pl-agency/index.html#realizacje">Realizacje</a></li>
-          <li><a class="header-nav-link" href="/recruitment-task-for-the-adRespect.pl-agency/index.html#kontakt">Kontakt</a></li>
-      </ul>
-      <button class="">
-        <img src="/recruitment-task-for-the-adRespect.pl-agency/IconNav.d01c2800.svg" alt="">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header-navbar" aria-controls="header-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="header-navbar">
+        <ul class="navbar-nav header-nav-list">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle header-nav-link active" href="#" data-bs-toggle="dropdown" aria-expanded="false">Oferta</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item header-nav-link" href="#">Projecty</a></li>
+              <li><a class="dropdown-item header-nav-link" href="#">Wizualizacje</a></li>
+              <li><a class="dropdown-item header-nav-link" href="#">Realizacje</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link header-nav-link" aria-current="page" href="/recruitment-task-for-the-adRespect.pl-agency/index.html#o-firmie">O firmie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link header-nav-link" href="/recruitment-task-for-the-adRespect.pl-agency/index.html#realizacje">Realizacje</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link header-nav-link" href="/recruitment-task-for-the-adRespect.pl-agency/index.html#kontakt">Kontakt</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search" id="search">
+          <input class="form-control active-sm" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success active-sm" type="submit">Search</button>
+        </form>
+      </div>
+      <button class="btn-search active-md" type="button" aria-label="Search" id="search-toggler">
+        <img src="/recruitment-task-for-the-adRespect.pl-agency/IconNav.d01c2800.svg" alt="Search icon" width="24" height="24">
       </button>
     </div>
   </nav>
+
+  <!-- <div class="blockSearch active">
+    <form action="/pl/search/" method="get">
+      <input type="text" name="query">
+      <button type="submit" class="button">Search</button>
+    </form>
+  </div> -->
+
 </header>
+
+<!-- me-auto mb-2 mb-lg-0 -->
 
     <main>
       <section class="bg-beige">
-  <div class="container px-lg-3">
-    <div class="row row-cols-1 row-cols-lg-2 gx-lg-6">
-      <div class="col-lg-6 align-self-center">
-        <div class="section-intro">
-          <div>
-            <h1 class="title-intro">Nowoczesna aranżacja Twojego ogrodu</h1>
-            <p class="text">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usługz indywidualnym podejściem do każdego projektu.</p>
-            <div class="intro-btn">
-              <button class="btn btn-primary">Skontaktuj się z nami</button>
-              <a class="btn btn-outline-primary btn-arrow-down" href="/recruitment-task-for-the-adRespect.pl-agency/index.html#realizacje">Zobacz nasze realizacje</a>
+  <div id="carouselIntro" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="container px-lg-3">
+          <div class="row row-cols-1 row-cols-lg-2 gx-lg-6">
+            <div class="col-lg-6 align-self-center">
+              <div class="section-intro">
+                <div>
+                  <h1 class="title-intro">Nowoczesna aranżacja Twojego ogrodu</h1>
+                  <p class="text">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usługz indywidualnym podejściem do każdego projektu.</p>
+                  <div class="intro-btn">
+                    <button class="btn btn-primary">Skontaktuj się z nami</button>
+                    <a class="btn btn-outline-primary btn-arrow-down" href="/recruitment-task-for-the-adRespect.pl-agency/index.html#realizacje">Zobacz nasze realizacje</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="img-rich-container">
+                <img class="img-rich" src="/recruitment-task-for-the-adRespect.pl-agency/photo.2dcf0950.jpg" alt="House in the garden" width="688" height="737">
+              </div>
             </div>
           </div>
         </div>
       </div>
-      
-      <div class="col-lg-6">
-        <div class="img-rich-container">
-          <img class="img-rich" src="/recruitment-task-for-the-adRespect.pl-agency/photo.5990dd9c.jpg" alt="House in the garden" width="688" height="737">
+      <div class="carousel-item">
+        <div class="container px-lg-3">
+          <div class="row row-cols-1 row-cols-lg-2 gx-lg-6">
+            <div class="col-lg-6 align-self-center">
+              <div class="section-intro">
+                <div>
+                  <h1 class="title-intro">Nowoczesna aranżacja Twojego ogrodu</h1>
+                  <p class="text">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usługz indywidualnym podejściem do każdego projektu.</p>
+                  <div class="intro-btn">
+                    <button class="btn btn-primary">Skontaktuj się z nami</button>
+                    <a class="btn btn-outline-primary btn-arrow-down" href="/recruitment-task-for-the-adRespect.pl-agency/index.html#realizacje">Zobacz nasze realizacje</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="img-rich-container">
+                <img class="img-rich" src="/recruitment-task-for-the-adRespect.pl-agency/photo.2dcf0950.jpg" alt="House in the garden" width="688" height="737">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselIntro" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselIntro" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-</section> 
+</section>
+ 
       <section class="section-oferta">
   <div class="container">
     <div class="section-oferta-second">
@@ -103,20 +173,20 @@
   </div>
 </section> 
       <section class="bg-green">
-  <div class="container">
-    <div class="row row-cols-1 row-cols-lg-2 align-items-center">
-      <div class="col-lg-6 pr-0">
-        <div class="img-container">
-          <img class="img-fluid width" src="/recruitment-task-for-the-adRespect.pl-agency/photo2.bc27dfb1.jpg" alt="House in the garden" width="688" height="720">
+  <div class="container px-lg-3">
+    <div class="row row-cols-1 row-cols-lg-2 gx-lg-6">
+      <div class="col-lg-6">
+        <div class="img-container-reverse">
+          <img class="img-rich" src="/recruitment-task-for-the-adRespect.pl-agency/photo2.bc27dfb1.jpg" alt="House in the garden" width="688" height="720">
         </div>
       </div>
       <div class="col-lg-6">
         <div class="section-about-company">
           <div>
             <p class="section-name-text section-name-text-grey" id="o-firmie">O firmie</p>
-            <h2 class="title-ofirme">Tworzymy z <span class="second-title">pasją</span></h2>
+            <h2 class="title-about-company">Tworzymy z <span class="second-title">pasją</span></h2>
             <p class="text">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
-            <a class="btn btn-outline-secondary btn-arrow-right" href="#">Poznaj nas bliżej</a>
+            <a class="btn btn-outline-secondary btn-arrow-right btn-mobile-wide" href="#">Poznaj nas bliżej</a>
           </div>
         </div>
       </div>
@@ -132,13 +202,13 @@
       <section class="section-contact">
   <div class="container">
     <div class="section-contact-second" id="kontakt">
-      <div class="row row-cols-1 row-cols-lg-2 g-5 align-items-end">
+      <div class="row row-cols-1 row-cols-md-2 g-5 align-items-end">
         <div class="col-lg-9">
-          <h2 class="title-kontakt">Zostańmy w kontakcie! Znajdziesz nas na <span class="second-title">Instagramie</span>.</h2>
+          <h2 class="title-contact">Zostańmy w kontakcie! Znajdziesz nas na <span class="second-title">Instagramie</span>.</h2>
         </div>
         <div class="col-lg-3">
-          <p class="text-kontakt">Śledź nasze najnowsze realizacje!</p>
-          <a class="btn btn-secondary" href="https://www.instagram.com/" target="_blank">Instagram</a>
+          <p class="text-contact">Śledź nasze najnowsze realizacje!</p>
+          <a class="btn btn-secondary btn-mobile-wide" href="https://www.instagram.com/" target="_blank">Instagram</a>
         </div>
       </div>
     </div>
@@ -157,7 +227,7 @@
         </div>
         <div class="footer-kontakt align-items-center">
           <p class="mb-0">Daj znać, co możemy dla Ciebie zrobić!</p>
-          <button class="btn btn-primary btn-footer">Skontaktuj się z nami</button>
+          <button class="btn btn-primary btn-footer btn-mobile-wide">Skontaktuj się z nami</button>
         </div>
       </div>
 
@@ -190,6 +260,6 @@
   </div>
 </footer>
     
-    <script type="module" src="/recruitment-task-for-the-adRespect.pl-agency/index.540da04d.js"></script>
+    <script type="module" src="/recruitment-task-for-the-adRespect.pl-agency/index.96df0434.js"></script>
   </body>
 </html>
