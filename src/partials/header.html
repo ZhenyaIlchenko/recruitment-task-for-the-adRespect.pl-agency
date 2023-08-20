@@ -1,5 +1,5 @@
 <header>
-  <nav>
+  <nav class="navbar navbar-expand-lg">
     <div class="container header-nav">
       <div class="header-logo">
         <a href="/src/index.html" title="Go to the main page">
@@ -7,15 +7,49 @@
         </a>
       </div>
 
-      <ul class="header-nav-list">
-          <li><a class="header-nav-link" href="/src/index.html#oferta">Oferta</a></li>
-          <li><a class="header-nav-link" href="/src/index.html#o-firmie">O firmie</a></li>
-          <li><a class="header-nav-link" href="/src/index.html#realizacje">Realizacje</a></li>
-          <li><a class="header-nav-link" href="/src/index.html#kontakt">Kontakt</a></li>
-      </ul>
-      <button class="">
-        <img src="/src/images/IconNav.svg" alt="">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header-navbar" aria-controls="header-navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="header-navbar">
+        <ul class="navbar-nav header-nav-list">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle header-nav-link active" href="#" data-bs-toggle="dropdown" aria-expanded="false">Oferta</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item header-nav-link" href="#">Projecty</a></li>
+              <li><a class="dropdown-item header-nav-link" href="#">Wizualizacje</a></li>
+              <li><a class="dropdown-item header-nav-link" href="#">Realizacje</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link header-nav-link" aria-current="page" href="/src/index.html#o-firmie">O firmie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link header-nav-link" href="/src/index.html#realizacje">Realizacje</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link header-nav-link" href="/src/index.html#kontakt">Kontakt</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search" id="search">
+          <input class="form-control active-sm" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success active-sm" type="submit">Search</button>
+        </form>
+      </div>
+      <button class="btn-search active-md" type="button" aria-label="Search" id="search-toggler">
+        <img src="/src/images/IconNav.svg" alt="Search icon" width="24" height="24">
       </button>
     </div>
   </nav>
+
+  <!-- <div class="blockSearch active">
+    <form action="/pl/search/" method="get">
+      <input type="text" name="query">
+      <button type="submit" class="button">Search</button>
+    </form>
+  </div> -->
+
 </header>
+
+<!-- me-auto mb-2 mb-lg-0 -->
