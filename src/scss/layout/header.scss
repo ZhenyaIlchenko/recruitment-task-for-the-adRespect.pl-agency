@@ -1,11 +1,11 @@
 header {
-  padding-top: 26px;
-  padding-bottom: 26px;
+  padding-top: 11px;
+  padding-bottom: 11px;
 
-  @include media-breakpoint-down(sm) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
+  // @include media-breakpoint-down(sm) {
+  //   padding-top: 16px;
+  //   padding-bottom: 16px;
+  // }
 }
 
 .header-nav {
@@ -15,11 +15,15 @@ header {
 
 .header-logo {
   margin-right: auto;
+
+  @include media-breakpoint-down(md) {
+  margin-bottom: 20px;
+    }
 }
 
 .header-logo-img {
   @include media-breakpoint-down(sm) {
-    height: 19px;
+    height: 20px;
     width: 100px;
   }
 }
@@ -29,7 +33,8 @@ header {
   gap: 48px;
   list-style: none;
   margin-bottom: 0;
-  margin-right: 48px;
+  margin-left: auto;
+  margin-right: 42px;
   padding-left: 0;
 
   @include media-breakpoint-down(lg) {
@@ -42,3 +47,33 @@ header {
   font-size: 14px;
   text-decoration: none;
 }
+
+// .blockSearch {
+//   background-color: #e4e4e3;
+//     padding: 30px 24px;
+//     display: none;
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//     right: 0;
+// }
+
+// .blockSearch
+// .active {
+//   z-index: 3;
+//   display: block;
+// }
+
+.dropdown-menu {
+  --bs-dropdown-border-color: #dcc1ab;
+}
+
+.dropdown-item {
+  --bs-dropdown-link-hover-bg: #dcc1ab;
+}
+
+// .navbar {
+//   --bs-navbar-padding-y: 0;
+//   // padding-top: 0;
+//   // padding-bottom: 0;
+// }
