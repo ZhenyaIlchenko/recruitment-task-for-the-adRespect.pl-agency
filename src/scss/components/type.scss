@@ -6,12 +6,21 @@
   margin-bottom: 32px;
 }
 
-.title-ofirme {
+.title-about-company{
   margin-bottom: 40px;
 }
 
 .title-realizacje {
   margin-bottom: 96px;
+}
+
+.title-contact {
+  font-size: 40px;
+  margin-bottom: 0;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 26px;
+  }
 }
 
 .second-title {
@@ -31,22 +40,21 @@
 
 .text {
   margin-bottom: 72px;
+
+  @include media-breakpoint-down(lg) {
+    margin-bottom: 45px;
+  }
 }
 
 .text-second {
   margin-bottom: 96px;
-}
-
-.title-kontakt {
-  font-size: 40px;
-  margin-bottom: 0;
-  // @include font-size(2,5rem);
 
   @include media-breakpoint-down(lg) {
-    font-size: 26px;
+    margin-bottom: 45px;
   }
 }
 
-.text-kontakt {
+
+.text-contact {
   margin-bottom: 24px;
 }
