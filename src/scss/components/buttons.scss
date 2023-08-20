@@ -8,13 +8,6 @@ $icon4: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1
   --bs-btn-color: #f5f0ec;
 }
 
-// .btn-secondary {
-//   --bs-btn-bg: $grey-text-color;
-//   --bs-btn-color: $green-text-color;
-//   --bs-btn-active-color: #1b5b31;
-//   --bs-btn-hover-color: #1b5b31;
-// }
-
 .btn-secondary {
   --bs-btn-color: #1b5b31;
   --bs-btn-active-color: #1b5b31;
@@ -23,6 +16,32 @@ $icon4: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1
   --bs-btn-hover-border-color: #f5f0ec;
   --bs-btn-active-color: #f5f0ec;
   --bs-btn-active-bg: #1b5b31;
+}
+
+.btn-search {
+  color: $primary-text-color;
+  height: 40px;
+  width: 40px;
+  background: none;
+  border: 0;
+  border-radius: 50%;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  &:hover {
+    background-color: $bgcolor;
+  }
+
+  @include media-breakpoint-down(lg) {
+    display: none;
+  }
+}
+
+.btn-search
+.active {
+  background-color: $bgcolor;
 }
 
 .btn-arrow-right {
@@ -48,7 +67,7 @@ $icon4: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1
 
   &:hover,
   &:focus {
-    background-position: right 20px top 42%;
+    background-position: right 20px top 62%;
     background-image: escape-svg($icon2);
   }
 }
@@ -58,7 +77,15 @@ $icon4: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1
   flex-direction: column;
   gap: 24px 36px;
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(sm) {
     flex-direction: row;
+  }
+}
+
+.btn-mobile-wide {
+  @include media-breakpoint-down(sm) {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
