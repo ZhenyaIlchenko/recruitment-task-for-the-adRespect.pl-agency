@@ -52,10 +52,13 @@ $card-spacer-x: 40px;
 $card-title-spacer-y: 12px;
 
 // Buttons //
-
-// $btn-color:                   var(--#{$prefix}body-color) !default;
 $input-btn-padding-y: 12px;
 $input-btn-padding-x: 24px;
-$btn-padding-y-sm: 10px;
-$btn-padding-x-sm: 24px;
+// $btn-padding-y-sm: 10px;
+// $btn-padding-x-sm: 24px;
 $btn-border-radius: 200px;
+
+// Carousel //
+$carousel-control-prev-icon-bg:      url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"><path fill="#000" d="M10.795 22.94a1.5 1.5 0 0 0 0 2.12l9.546 9.547a1.5 1.5 0 1 0 2.121-2.122L13.977 24l8.485-8.485a1.5 1.5 0 1 0-2.12-2.122l-9.547 9.546Zm25.35-.44h-24.29v3h24.29v-3Z"/></svg>');
+$carousel-control-next-icon-bg:      url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"><path fill="#000" d="M37.205 25.06a1.5 1.5 0 0 0 0-2.12l-9.546-9.547a1.5 1.5 0 1 0-2.121 2.122L34.023 24l-8.485 8.485a1.5 1.5 0 1 0 2.12 2.122l9.547-9.546Zm-25.35.44h24.29v-3h-24.29v3Z"/></svg>');
+
