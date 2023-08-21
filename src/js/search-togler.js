@@ -3,6 +3,7 @@ export default function searchToggler() {
   let search = document.querySelector('#search');
 
   let toggleSearch = () => {
+    console.log(search);
     search.classList.toggle('active');
   }
 
