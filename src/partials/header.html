@@ -1,16 +1,18 @@
 <header>
   <nav class="navbar navbar-expand-lg">
-    <div class="container header-nav">
+    <div class="container">
+      
       <div class="header-logo">
         <a href="/src/index.html" title="Go to the main page">
           <img class="header-logo-img" src="/src/images/logo.svg" alt="Site logo" width="114" height="19">
         </a>
       </div>
 
-      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header-navbar" aria-controls="header-navbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#header-navbar" aria-controls="header-navbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
 
       <div class="navbar-collapse collapse" id="header-navbar">
         <ul class="navbar-nav header-nav-list">
@@ -32,24 +34,17 @@
             <a class="nav-link header-nav-link" href="/src/index.html#kontakt">Kontakt</a>
           </li>
         </ul>
-        <form class="d-flex" role="search" id="search">
-          <input class="form-control active-sm" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success active-sm" type="submit">Search</button>
-        </form>
+      
+        <div class="blockSearch" id="search">
+          <form class="d-flex" role="search">
+            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+          </form>
+        </div> 
       </div>
       <button class="btn-search active-md" type="button" aria-label="Search" id="search-toggler">
         <img src="/src/images/IconNav.svg" alt="Search icon" width="24" height="24">
       </button>
     </div>
   </nav>
-
-  <!-- <div class="blockSearch active">
-    <form action="/pl/search/" method="get">
-      <input type="text" name="query">
-      <button type="submit" class="button">Search</button>
-    </form>
-  </div> -->
-
 </header>
-
-<!-- me-auto mb-2 mb-lg-0 -->
