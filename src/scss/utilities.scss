@@ -14,10 +14,6 @@
   align-items: center;
 }
 
-// .pr-0 {
-//   padding-right: 0;
-// }
-
 .mb-0 {
   margin-bottom: 0;
 }
@@ -25,10 +21,6 @@
 .mr-auto {
   margin-right: auto;
 }
-
-// .mt-20 {
-//   margin-top: 20px;
-// }
 
 .white-space-nowrap {
   white-space: nowrap;
@@ -44,4 +36,8 @@
   @include media-breakpoint-up(lg) {
     display: none;
   }
+}
+
+.mr-2 {
+  margin-right: 20px;
 }
