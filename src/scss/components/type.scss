@@ -12,6 +12,10 @@
 
 .title-realizacje {
   margin-bottom: 96px;
+
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 30px;
+  }
 }
 
 .title-contact {
