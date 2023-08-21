@@ -26,6 +26,8 @@
     "posthtml-include": "^1.7.4"
   },
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "masonry-layout": "^4.2.2",
+    "simplelightbox": "^2.14.1"
   }
 }
