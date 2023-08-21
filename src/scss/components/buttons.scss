@@ -31,7 +31,7 @@ $icon4: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1
   display: flex;
 
   &:hover {
-    background-color: $bgcolor;
+    background-color: $secondary;
   }
 
   @include media-breakpoint-down(lg) {
@@ -44,33 +44,73 @@ $icon4: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1
   background-color: $bgcolor;
 }
 
-.btn-arrow-right {
-  background-image: escape-svg($icon3);
-  background-repeat: no-repeat;
-  background-position: right 20px top 50%;
-  padding-right: 46px;
-  transition: background-position .2s ease-in-out;
+// .btn-arrow-right {
+//   background-image: escape-svg($icon3);
+//   background-repeat: no-repeat;
+//   background-position: right 20px top 50%;
+//   padding-right: 46px;
+//   transition: background-position .2s ease-in-out;
 
-  &:hover,
-  &:focus {
-    background-position: right 15px top 50%;
+//   &:hover,
+//   &:focus {
+//     background-position: right 15px top 50%;
+//     background-image: escape-svg($icon4);
+//   }
+// }
+
+.btn-arrow-right {
+  &::after {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    content: "";
+    background-image: escape-svg($icon3);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 8px;
+    vertical-align: -3px;
+  }
+
+  &:hover::after{
     background-image: escape-svg($icon4);
   }
 }
 
-.btn-arrow-down {
-  background-image: escape-svg($icon);
-  background-repeat: no-repeat;
-  background-position: right 20px top 50%;
-  padding-right: 46px;
-  transition: background-position .2s ease-in-out;
+// .btn-arrow-down {
+//   background-image: escape-svg($icon);
+//   background-repeat: no-repeat;
+//   background-position: right 20px top 50%;
+//   padding-right: 46px;
+//   transition: background-position .2s ease-in-out;
 
-  &:hover,
-  &:focus {
-    background-position: right 20px top 62%;
+//   &:hover,
+//   &:focus {
+//     background-position: right 20px top 62%;
+//     background-image: escape-svg($icon2);
+//   }
+// }
+
+
+.btn-arrow-down {
+  &::after {
+    display: inline-block;
+    flex-shrink: 0;
+    width: 16px;
+    height: 17px;
+    content: "";
+    background-image: escape-svg($icon);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 8px;
+    vertical-align: -3px;
+  }
+
+  &:hover::after{
     background-image: escape-svg($icon2);
   }
 }
+
 
 .intro-btn {
   display: flex;
