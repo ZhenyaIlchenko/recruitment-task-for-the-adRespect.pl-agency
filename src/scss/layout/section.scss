@@ -30,11 +30,10 @@
 .section-realizacje {
   background-color: $bgcolor;
   padding-top: 120px;
-  padding-bottom: 96px;
+  padding-bottom: 10px;
 
   @include media-breakpoint-down(lg) {
     padding-top: 44px;
-    padding-bottom: 44px;
   }
 }
 
