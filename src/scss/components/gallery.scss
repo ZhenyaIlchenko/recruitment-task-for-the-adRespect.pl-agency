@@ -1,3 +1,7 @@
+.masonry {
+  position: relative;
+}
+
 .masonry-overlay {
   &::after {
     content: '';
